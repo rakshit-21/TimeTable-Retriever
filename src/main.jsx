@@ -1,10 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+// src/main.jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import TimeTableApp from "./App.jsx";   // this renders your App.jsx
+import "./index.css";              // Tailwind base (if you have it)
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <TimeTableApp />
+  </React.StrictMode>
+);
