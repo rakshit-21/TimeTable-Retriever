@@ -1,14 +1,8 @@
-// TimetableApp.jsx (replace existing)
-// ----------------------------------------------------
-// React + Tailwind front‑end that connects to your FastAPI
-// backend (GET /timetable/{batch}).  Drop this file into
-// src/ and make sure VITE_API_URL is defined in .env.
-// ----------------------------------------------------
 
 import { useState } from "react";
 
 // Fallback to localhost if env not set
-const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const API = import.meta.env.VITE_API_URL;
 
 export default function TimetableApp() {
   const [batch, setBatch] = useState("");
