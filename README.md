@@ -1,12 +1,41 @@
-# React + Vite
+# 📅 Timetable Retriever
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web app to **extract and display college timetables** from PDF files with a clean, responsive UI. Built with **React + Vite** (frontend) and **FastAPI** (backend) for real-time, batch-based timetable retrieval.
 
-Currently, two official plugins are available:
+<div align="center">
+  <img src="https://img.shields.io/badge/React-19-blue.svg" />
+  <img src="https://img.shields.io/badge/Vite-7-purple.svg" />
+  <img src="https://img.shields.io/badge/FastAPI-Latest-green.svg" />
+  <img src="https://img.shields.io/badge/TailwindCSS-4.1-cyan.svg" />
+  <img src="https://img.shields.io/badge/Status-Production_Ready-success.svg" />
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ **Smart PDF Extraction** – Parses timetable PDFs using regex & Camelot/pdfplumber  
+- ✅ **Batch-based Search** – Quickly view timetables for any batch (e.g., `F7`, `E16`)  
+- ✅ **Day-wise Grouping** – Organized schedule with color-coded days  
+- ✅ **Beautiful UI** – Gradient themes, glassmorphism, and Lucide icons  
+- ✅ **Responsive Design** – Mobile-friendly with smooth animations  
+- ✅ **Fast Performance** – Vite-powered React frontend & optimized FastAPI backend  
+
+---
+
+## 🏗️ Tech Stack
+
+| Layer       | Technology                                    |
+|-------------|-----------------------------------------------|
+| **Frontend** | React 19, Vite 7, Tailwind CSS, Lucide Icons  |
+| **Backend**  | FastAPI, Python 3.8+, Pandas, pdfplumber, Camelot |
+| **Storage**  | Pickle-based timetable data (`timetable.pkl`) |
+
+---
+
+## 🚀 Quick Start
+
+### 1. Clone & Install
+```bash
+git clone https://github.com/your-username/timetable-retriever.git
+cd timetable-retriever
